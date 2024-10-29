@@ -1,0 +1,3 @@
+# Curso Empezar a trabajar con contenedores
+El curso Empezar a trabajar con contenedores nos introduce en la tecnología de contenedores desde un punto de vista teórico y práctico. Comenzamos repasando los fundamentos básicos de esta nueva forma de trabajar que permite iniciarse fácilmente en el mundo de Docker, Kubernetes y otras tecnologías vinculadas a los contenedores. Recorremos sus orígenes y evolución y también, con ejemplos prácticos, explicamos cómo nos ayudan a mejorar los entornos de desarrollo y producción de nuestras aplicaciones
+Disponible en YouTube: https://www.youtube.com/c/arsys
