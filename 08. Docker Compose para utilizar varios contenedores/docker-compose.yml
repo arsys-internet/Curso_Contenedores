@@ -1,0 +1,16 @@
+services:
+  frontend:
+    image: nginx
+    ports:
+    - 8080:80
+    profiles:
+    - front
+  database:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password123!
+      MYSQL_DATABASE: todo
+      MYSQL_USER: todo
+      MYSQL_PASSWORD: password123!    
+    profiles:
+      - infra

@@ -1,0 +1,24 @@
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: password123!
+      MYSQL_DATABASE: todo
+      MYSQL_USER: todo
+      MYSQL_PASSWORD: password123!
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+
+  nodejs:
+    image: node:16
+    volumes:
+      - ./api:/api
+    working_dir: /api
+    entrypoint: /bin/bash
+    command: -c "npm install && node app.js"
+    ports:
+      - 3000:3000
+  adminer:
+    image: adminer
+    ports:
+      - 8080:8080
